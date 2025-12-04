@@ -6,7 +6,7 @@ on:
         type: choice
         description: "配置文件"
         required: true
-        default: oneplus_pad_2_pro_b
+        default: oneplus_15
         options:
           - oneplus_nord_ce4_lite_5g_v
           - oneplus_nord_ce4_v
@@ -73,7 +73,7 @@ on:
         type: string
         description: "自定义构建时间(输入F使用当前UTC时间)"
         required: false
-        default: "Fri Jul 11 22:46:09 UTC 2025"
+        default: "Fri Oct 31 14:58:19 UTC 2025"
       KSU_META:
         type: string
         description: "分支名(必填)/自定义版本标识(留空不修改)/回退分支提交哈希版本(留空不修改)"
@@ -83,7 +83,7 @@ on:
         type: string
         description: "自定义内核后缀(不输入使用随机字符串)"
         required: false
-        default: "8-g5a0ffb447c1d-ab13771415-4k"
+        default: "5-g188c695beb6d-ab14367805-4k"
       SUBLEVEL:
         description: "自定义内核等级欺骗(SUBLEVEL)"
         required: false
