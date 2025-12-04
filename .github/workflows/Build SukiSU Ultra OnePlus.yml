@@ -754,9 +754,7 @@ jobs:
           # SukiSU Ultra配置
           echo "CONFIG_KSU=y" >> "$CONFIG_FILE"
 
-          # KPM配置
-          echo "CONFIG_KPM=y" >> "$CONFIG_FILE"
-
+         
           # SUSFS配置
           echo "CONFIG_KSU_SUSFS=y" >> "$CONFIG_FILE"
           echo "CONFIG_KSU_SUSFS_SUS_PATH=y" >> "$CONFIG_FILE"
@@ -769,10 +767,7 @@ jobs:
           echo "CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG=y" >> "$CONFIG_FILE"
           echo "CONFIG_KSU_SUSFS_OPEN_REDIRECT=y" >> "$CONFIG_FILE"
 
-          # TMPFS配置*
-          echo "CONFIG_TMPFS_XATTR=y" >> "$CONFIG_FILE"
-          echo "CONFIG_TMPFS_POSIX_ACL=y" >> "$CONFIG_FILE"
-
+         
           # BBR & ECN配置*
           if [ "${{ github.event.inputs.BBR_ECN }}" = "true" ]; then
             echo "CONFIG_TCP_CONG_ADVANCED=y" >> "$CONFIG_FILE"
